@@ -154,6 +154,7 @@ class GuidancePublisher(Node):
 def main() -> None:
     rclpy.init()
     guidance_publisher: GuidancePublisher = GuidancePublisher()
+    print("hello world")
     while rclpy.ok():
         try:
             if guidance_publisher.current_state[0] is None:
